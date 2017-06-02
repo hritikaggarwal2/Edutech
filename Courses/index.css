@@ -138,6 +138,45 @@ body{
 	position: relative;
 	width: 100%;
 	height:200px ;
+}
+
+
+.bim1{
 	background: url("logo1.png") center center no-repeat;
 	background-size: cover;
+}
+
+.bim2{
+	background: url("https://fthmb.tqn.com/b1BWNVVGupSThLhn2OK3n-OAYik=/1250x833/filters:fill(auto,1)/about/cover-letter-57c72b575f9b5829f46c27d9.png") top no-repeat;
+	background-size: cover;
+}
+
+.bim3{
+	background: url("http://www.ichanical.com/wp-content/uploads/2015/04/html-programming.jpg ") center center no-repeat;
+	background-size: cover;
+}
+
+.bim4{
+	background: url("logo2.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+
+.bim5{
+	background: url("http://img.ecumenicalnews.com/full/3631/google-drive.png") center center no-repeat;
+	background-size: cover;
+}
+
+.bim6{
+	background: url("http://topnotchdezigns.com/wp-content/uploads/2016/11/web-design-trends-in-2016.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+.bim7{
+	background: url("https://i.ytimg.com/vi/RuOHXppAHaY/maxresdefault.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+.sm{
+	font-size: 15px;
 }
