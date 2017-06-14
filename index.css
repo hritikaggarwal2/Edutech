@@ -40,9 +40,38 @@ body,html
 	width: 100%;
 	height: 150px;
 	position: absolute;
-	z-index: 1;
-	overflow: hidden;
+	z-index: 300;
+	background: transparent;
 }
+
+.links
+{
+	width: 50%;
+	height: 240px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+	margin-top: 40px;
+}
+
+.links li
+{
+	list-style: none;
+	text-align: center;
+	margin: 40px;
+	color: #309dc5;
+	font-size: 0px;
+	cursor: pointer;
+	position: relative;
+	top: 0px;
+}
+
+.links li:hover
+{
+	color: #1b7da1;
+}
+
 
 .nav .all_bars
 {
@@ -52,69 +81,46 @@ body,html
 	left: 5%;
 	cursor: pointer;
 	top: 50%;
+	z-index: 99999;
 }
 
-.nav .all_bars::after
+.black
 {
-	content: '';
 	width: 0px;
 	height: 0px;
 	position: absolute;
-	left: 0;
-	right: 0;
-	margin: auto;
-	top: 10px;
-	border-radius: 100%;
+	left: 6%;
+	top: 15%;
+	right: 0px;
 	background: rgba(0,0,0,0.3);
-
+	border-radius: 100%;
+	transform: translate(-40%, -40%);
+	z-index: 250;
+	transition: .8s ease;
 }
 
-@-webkit-keyframes clicker
+.nav .all_bars .bars
 {
-	0%
-	{
-		width: 0px;
-		height: 0px;
-	}
-	50%
-	{
-		width: 30px;
-		height: 30px;
-		top: -5px;
-	}
-	100%
-	{
-		width: 0px;
-		height: 0px;
-		opacity: 0;
-	}
-}
-
-.nav .all_bars:hover:after
-{
-	-webkit-animation: clicker 2s ease;
-}
-
-
-
-.nav .bars
-{
+	content: '';
 	width: 30px;
 	height: 3px;
 	border-radius: 10px;
+	position: absolute;
 	background: #eee;
-	
+
 }
 
 .nav .bars::before
 {
 	content: '';
+	opacity: 1;
 	width: 20px;
 	height: 3px;
 	border-radius: 10px;
 	background: #eee;
 	position: absolute;
 	top:  8px;
+    transition: all 0.5s ease;
 }
 
 .nav .bars::after
@@ -126,8 +132,46 @@ body,html
 	background: #eee;
 	position: absolute;
 	top: 16px;
+    transition: all 0.5s ease;
 }
 
+.nav .all_bars .changed
+{
+	content: '';
+	width: 30px;
+	height: 3px;
+	border-radius: 10px;
+	position: absolute;
+	background: transparent;
+}
+
+.nav .changed::after
+{
+	content: '';
+	width: 35px;
+	height: 3px;
+	border-radius: 10px;
+	background: #eee;
+	position: absolute;
+	top: 0px;
+	left: -2px;
+	transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+.nav .changed::before
+{
+	content: '';
+	width: 35px;
+	height: 3px;
+	border-radius: 10px;
+	background: #eee;
+	left: -2px;
+	position: absolute;
+	top: 0px;
+	transform: rotate(-45deg);
+    transition: all 0.5s ease;
+}
 
 .section1
 {
@@ -171,7 +215,7 @@ body,html
 	position: relative;
 	right: 0px;
 	margin-top: 10%;
-    z-index: 1000;
+    z-index: 100;
     order: 1;
 }
 
