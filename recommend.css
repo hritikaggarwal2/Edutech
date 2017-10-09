@@ -1,6 +1,6 @@
 body,html
 {
-	font-family: lato;
+	 font-family: Lato;
 	margin: 0;
 	background: #eee;
 }
@@ -14,19 +14,20 @@ body,html
 	top: 0;	
 	color: #fff;
 	text-align: center;
-	border-bottom-right-radius: 30%;
-	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
 }
 
 .text
 {
 	position: relative;
-	top: 250px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .t
 {
-	font-size:40px ;
+	font-size:4em ;
 }
 
 .st
@@ -132,8 +133,7 @@ textarea
 
 input:focus,textarea:focus
 {
-	width: 310px;
-	border: 2px solid #26BDE2;
+		border: 2px solid #26BDE2;
 }
 
 button
@@ -141,9 +141,9 @@ button
 	border:none;
 	background: none;
 	outline: none;
-	width: 100%;
+	width: 200px;
 	height: 50px;
-	border: 1px solid #26BDE2;
+	border: 2px solid #26BDE2;
 	border-radius: 10px;
 	margin-top: 30px;
 	color: #26BDE2;
@@ -195,6 +195,9 @@ button:hover
     top: 0;
     right: 0;
     transform: skew(0deg,-4deg);
+
+	border-top-right-radius: 40%;
+	border-top-left-radius: 30%;
 }
 
 .footer p

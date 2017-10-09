@@ -1,3 +1,8 @@
+*
+{
+	transition: .3s ease;
+}
+
 body,html
 {
 	font-family: lato;
@@ -14,18 +19,21 @@ body,html
 	top: 0;	
 	color: #fff;
 	text-align: center;
-	border-bottom-right-radius: 30%;
-	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
 }
 
 
-.text{
+.text
+{
 	position: relative;
-	top: 200px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-.t{
-	font-size:32px ;
+.t
+{
+	font-size:4em ;
 }
 
 .st{
@@ -35,27 +43,28 @@ body,html
 }
 
 .but{
-	position: absolute;
+	position: relative;
 	font-size:22px;
 	font-style: italic;
 	font-weight: lighter;
 	width: 200px;
 	border: 2px solid #fff;
-	left: 50%;
-	transform: translateX(-50%);
-	margin-top: 40px;
-	padding:10px 5px;
+	margin: 40px auto 0 auto;
+	display: inline-block;
+	padding:10px 25px;
 	border-radius: 200px;
 	transition: all 0.3s ease;
 	cursor: pointer;
 }
 
-.but:hover{
+.but:hover
+{
 	background: #fff;
-	color:rgb(44,181, 232) ;
+	color:rgb(44,181, 232);
 }
 
-.top{
+.top
+{
 	height: 70px;
 	width: 100%;
 	position: absolute;
@@ -72,66 +81,69 @@ body,html
 	margin-left: 40px;
 }
 
-.list{
-	display: flex;
-	float: right;
-	line-height: 80px;
-	text-transform: capitalize;
-	color: #fff;
-	cursor: pointer;
-	margin-right:20px ;
-
-}
-
-.it:after{
-	content: "";
-	display: block;
-	width:0% ;
-	height: 2px;
-	background: #fff;
-	position: absolute;
-	left: 0;
-	bottom: 20px;
-	transition: all 0.5s ease; 
-}
-
-.it:hover:after{
-	width: 100%;
-}
-
-.it{
-	padding:0 10px;
-	text-align: center;
-	position: relative;
-	width: auto;
-}
-
-.coursecont{
+.coursecont
+{
 	width: 90%;
-
-	display: block;
 	margin:30px auto 0 auto;
 	display: flex;
 	flex-wrap: wrap;
+	align-content: center;
+	flex-direction: row;
 	justify-content: space-around;
 }
 
-.box{
+.box
+{
+	order: 1;
 	width: 350px;
-	height: 450px;
+	height: auto;
+	padding-bottom: 65px;
 	background: #fff;
+	overflow: hidden;
+	position: relative;
 	margin:15px  10px;
+	box-shadow: 12px 15px 20px 0 rgba(46,61,73,.05);
+}
+
+
+button
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	border:none;
+	background: none;
+	outline: none;
+	width: 160px;
+	height: 45px;
+	border: 2px solid #26BDE2;
+	border-radius: 10px;
+	margin: 10px auto 0 auto;
+	color: #26BDE2;
+	font-weight: 500;
+	font-size: .9em;
+	display: block;
+
+	transition: all.5s ease;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+button:hover
+{
+	background: rgba(44,181, 232,1);
+	color: #fff;
+}
+
+.box:hover
+{
 	box-shadow: 12px 15px 20px 0 rgba(46,61,73,.15);
 }
 
 .bdiv{
-	margin-left: 20px;
-	margin-top: 20px;
-	margin-right: 20px;
+	margin: 20px;
 
-}
-
-.bdiv p{
 }
 
 
@@ -212,7 +224,9 @@ body,html
     background: linear-gradient(91deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     transform-origin: right bottom;
     position: absolute;
-    border-radius: 5%;
+
+	border-top-right-radius: 40%;
+	border-top-left-radius: 30%;
     top: 0;
     right: 0;
     transform: skew(0deg,-4deg);

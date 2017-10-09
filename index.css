@@ -34,25 +34,29 @@ body,html
 	background-color: #00ffcc;
 }
 
+a
+{
+	text-decoration: none;
+}
 
 .nav
 {
-	width: 100%;
-	height: 150px;
-	position: absolute;
+	width: 300px;
+	height: 100%;
+	position: fixed;
 	z-index: 300;
+	display: none;
 	background: transparent;
 }
 
 .links
 {
-	width: 50%;
-	height: 240px;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	display: none;
-	margin-top: 40px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	padding-top: 50%;
+	left: -300px;
 }
 
 .links li
@@ -60,8 +64,8 @@ body,html
 	list-style: none;
 	text-align: center;
 	margin: 40px;
-	color: #309dc5;
-	font-size: 0px;
+	color: #bfbfbf;
+	font-size: 1.2em;
 	cursor: pointer;
 	position: relative;
 	top: 0px;
@@ -69,7 +73,7 @@ body,html
 
 .links li:hover
 {
-	color: #1b7da1;
+	color: #efefef;
 }
 
 
@@ -78,25 +82,11 @@ body,html
 	height: 20px;
 	width: 35px;
 	position: relative;
-	left: 5%;
+	left: 25%;
+	transform: translateX(-25%);
+	top: 10%;
 	cursor: pointer;
-	top: 50%;
 	z-index: 99999;
-}
-
-.black
-{
-	width: 0px;
-	height: 0px;
-	position: absolute;
-	left: 6%;
-	top: 15%;
-	right: 0px;
-	background: rgba(0,0,0,0.3);
-	border-radius: 100%;
-	transform: translate(-40%, -40%);
-	z-index: 250;
-	transition: .8s ease;
 }
 
 .nav .all_bars .bars
@@ -151,7 +141,7 @@ body,html
 	width: 35px;
 	height: 3px;
 	border-radius: 10px;
-	background: #eee;
+	background: #bbb;
 	position: absolute;
 	top: 0px;
 	left: -2px;
@@ -165,12 +155,60 @@ body,html
 	width: 35px;
 	height: 3px;
 	border-radius: 10px;
-	background: #eee;
+	background: #bbb;
 	left: -2px;
 	position: absolute;
 	top: 0px;
 	transform: rotate(-45deg);
     transition: all 0.5s ease;
+}
+
+
+/* NAV BAR BIGGER */
+.navB
+{
+	width: 100%;
+	height: 100px;
+	background: transparent;
+	position: absolute;
+	top: 0px;
+	z-index: 99999999999;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.navB li
+{
+	order: 1;
+	list-style: none;
+	text-align: center;
+	margin: 40px;
+	color: #fff;
+	font-size: 1.2em;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+	padding-bottom: 12px;
+}
+
+.navB li::after
+{
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 2px;
+	transition: .5s ease;
+	background: #fff;
+	bottom: 0px;
+	left: 0px;
+}
+
+.navB li:hover:after
+{
+	transition: .5s ease;
+	width: 100%;
 }
 
 .section1
