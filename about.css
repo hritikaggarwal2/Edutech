@@ -76,7 +76,7 @@ body,html
 .mem
 {
 	order: 1;
-	width: 60vh;
+	width: 70vh;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
