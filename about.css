@@ -76,12 +76,15 @@ body,html
 .mem
 {
 	order: 1;
-	width: 42.5%;
+	width: 60vh;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;	
 }
 
 .left,.right
@@ -94,7 +97,6 @@ body,html
 {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	justify-content: center;
 	width: 240px;
 }

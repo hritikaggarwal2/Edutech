@@ -1,6 +1,6 @@
 body,html
 {
-	 font-family: Lato;
+	font-family: Lato;
 	margin: 0;
 	background: #eee;
 }
@@ -79,7 +79,7 @@ body,html
 
 .form
 {
-	width: 600px;
+	width: 60%;
 	height: auto;
 	margin: 80px auto 10px auto;
 	text-align: center;
