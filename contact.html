@@ -1,50 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Edutech | Contact Us</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<title>EduTech</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hritik Aggarwal">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="CSS/common.css">
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
 	<link rel="stylesheet" type="text/css" href="contact.css">
-	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="loader.js"></script>
+
+	<script type="text/javascript" src="sideBar.js"></script>
+</head>
 </head>
 <body>
-	<div class="backtop">
-		<div class="text">
-			<div class="t">Contact Us</div>
-			<div class="st">You feel something out of place ?</div>
-		</div>
-	</div>
-	<div class="top">
-		<img src="logo_white.png" class="im">
-	</div>
 
+<div class="loader"></div>
+
+<div class="toggle">
+	<div class="bars"></div>
+</div>
+
+<div class="nav">
+	<a>
+		<div class="menu">
+			<p>MENU</p>
+		</div>
+	</a>
+	<a href="index.html">
+		<div>
+			<img src="Assets/home.png">
+			<p>HOME</p>
+		</div>
+	</a>
+	<a href="courses.html">
+		<div>
+			<img src="Assets/vid.png">
+			<p>VIDEO LIBRARY</p>
+		</div>
+	</a>
+	<a href="stem.html">
+		<div>
+			<img src="Assets/stem.png">
+			<p>She For STEM</p>
+		</div>
+	</a>
+	<a href="about.html">
+		<div>
+			<img src="Assets/about.png">
+			<p>ABOUT US</p>
+		</div>
+	</a>
+	<a href="recommend.html">
+		<div>
+			<img src="Assets/write.png">
+			<p>RECOMMEND US</p>
+		</div>
+	</a>
+	<a href="testimonial.html">
+		<div>
+			<img src="Assets/star.png">
+			<p>TESTIMONIALS</p>
+		</div>
+	</a>
+	<a href="javascript: void(0)">
+		<div class="curr">
+			<img src="Assets/contact.png">
+			<p>CONTACT US</p>
+		</div>
+	</a>
+</div>
+
+<div class="section1">
+	<h2>Contact Us</h2>
+	<h1>Want To Say Hi!</h1>
+</div>
+
+<div class="section2">
 	<div class="form">
-		<div class="field">
-			<span>Full Name</span>
-			<input type="text" name="name" required>
-		</div>
-
-		<div class="field">
-			<span>Email Address</span>
-			<input type="text" name="name" required>
-		</div>
-
-		<div class="field">
-			<span>Contact Number</span>
-			<input type="number" name="name" required>
-		</div>
-
-		<div class="field">
-			<span>Your Message</span>
-			<textarea></textarea>
-		</div>
+		<input type="text" name="name" required placeholder="Your First Name">
+		<input type="text" name="name" required placeholder="Your Last Name">
+		<input type="email" name="email" required placeholder="Your Email Address">
+		<input type="number" name="num" required placeholder="Your Phone Number">
+		<textarea placeholder="Enter the message"></textarea>
 
 		<button>SUBMIT</button>
 	</div>
+	<div class="info">
+		<h2>Write Us</h2>
+		<p>teamedutechacademy@gmail.com</p>
 
-	<div class="footer">
-		<div class="background"></div>
-		<p>&copy; EduTech 2017</p>
+		<h2>Call Us</h2>
+		<p>+91 9958188118<br><span>(Head Of Department)</span></p>
+
+		<h2>Follow Us</h2>
+		<div class="contact">
+			<a href="https://www.facebook.com/edutechacademy/"><div class="box" style="background:#3b5997"><img src="fbW.png"></div></a>
+			<div class="box" style="background:#0077b5"><img src="linkedinW.png"></div>
+			<a href="https://www.youtube.com/channel/UCDqZLGNVPJlDe9Lbu2nqcZg/videos"><div class="box" style="background:#c12025"><img src="tubeW.png"></div></a>
+		</div>
+
 	</div>
+
+
+</div>
+
+
+<div class="section3">
+	<p>&copy; All Rights Reserved 2017</p>
+</div>
 </body>
 </html>

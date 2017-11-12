@@ -2,149 +2,151 @@
 <html>
 <head>
 	<title>EduTech</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hritik Aggarwal">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="CSS/common.css">
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<script type="text/javascript" src="jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="loader.js"></script>
+
+	<script type="text/javascript" src="sideBar.js"></script>
+
+
 </head>
 <body>
 
-<div class="nav">
-	<div class="all_bars">
-		<div class="bars"></div>
-	</div>
+<div class="loader"></div>
 
+
+<div class="toggle">
+	<div class="bars"></div>
+</div>
+
+<div class="nav">
+	<a>
+		<div class="menu">
+			<p>MENU</p>
+		</div>
+	</a>
+	<a href="javascript: void(0)">
+		<div class="curr">
+			<img src="Assets/home.png">
+			<p>HOME</p>
+		</div>
+	</a>
+	<a href="courses.html">
+		<div>
+			<img src="Assets/vid.png">
+			<p>VIDEO LIBRARY</p>
+		</div>
+	</a>
+	<a href="stem.html">
+		<div>
+			<img src="Assets/stem.png">
+			<p>She For STEM</p>
+		</div>
+	</a>
+	<a href="about.html">
+		<div>
+			<img src="Assets/about.png">
+			<p>ABOUT US</p>
+		</div>
+	</a>
+	<a href="recommend.html">
+		<div>
+			<img src="Assets/write.png">
+			<p>RECOMMEND US</p>
+		</div>
+	</a>
+	<a href="testimonial.html">
+		<div>
+			<img src="Assets/star.png">
+			<p>TESTIMONIALS</p>
+		</div>
+	</a>
+	<a href="contact.html">
+		<div>
+			<img src="Assets/contact.png">
+			<p>CONTACT US</p>
+		</div>
+	</a>
+</div>
+
+
+<div class="section1">
+	<div class="bg" id="particles-js"></div>
 	<div class="links">
-		<a href="#"><li>Home</li></a>
-		<a href="courses.html"><li>View Courses</li></a>
-		<a href="#"><li>About Us</li></a>
-		<a href="#"><li>Testimonials</li></a>
-		<a href="recommend.html"><li>Recommend Us</li></a>
+		<a href="about.html"><li>About Us</li></a>
+		<a href="testimonial.html"><li>Testimonials</li></a>
+		<a href="Recommend.html"><li>Recommend Us</li></a>
 		<a href="contact.html"><li>Contact Us</li></a>
 	</div>
-</div>
 
-<div class="navB">
-	<a href="#"><li>Home</li></a>
-	<a href="courses.html"><li>View Courses</li></a>
-	<a href="#"><li>About Us</li></a>
-	<a href="#"><li>Testimonials</li></a>
-	<a href="recommend.html"><li>Recommend Us</li></a>
-	<a href="contact.html"><li>Contact Us</li></a></div>
-<div class="website">
-	<div class="section1">
-		<div class="background"></div>
-
-		<div class="container">
-			<img src="logo_white.png">
-			<p>An Indian MOOC (massive open online course) which aims at providing tools required to excel in the 21st century</p>
-			<button>Explore Courses</button>
+	<div class="content">
+		<img src="logo_white.png">
+		<p>Teaching the art of technology to the world.</p>
+		<div class="btns">
+			<a href="courses.html"><button class="dkbl">Video Library</button></a>
+			<a href="courses.html"><button>VIew Teaser</button></a>
 		</div>
-	</div>
-
-	<div class="section2">
-		<h1>We Have A Vision</h1>
-		<p>Our purpose is lucid - We believe that everyone has the right of access to knowledge regardless of their social strata, race, colour, religion etc. Given that about 70% of the Indian population resides in rural areas and have restrained access to vital educational resources, we have come up with an unique solution.</p>
-
-		<iframe  src="https://www.youtube.com/embed/R1b-k2iEccU" frameborder="0" allowfullscreen></iframe>
-		
-	</div>
-
-	<div class="section3">
-		<h1>How we do it</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-		<div class="container">
-			<div class="learners">
-				<h2>Learn from Learners</h2>
-				<h4>Students teach the things they have learned</h4>
-			</div>
-
-			<div class="learners2">
-				<h2>Learn from Learners</h2>
-				<h4>Students teach the things they have learned</h4>
-			</div>
-
-			<div class="learners3">
-				<h2>Learn from Learners</h2>
-				<h4>Students teach the things they have learned</h4>
-				
-			</div>
-
-			<div class="learners4">
-				<h2>Learn from Learners</h2>
-				<h4>Students teach the things they have learned</h4>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="section4">
-		<h1>Explore Courses</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-		
-		<div class="container">
-			<div>
-				<div>
-					<h2>Learn Photoshop basics</h2>
-					<h4>Graphic Designing</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<button>Start Learning</button>
-				</div>
-
-				<div>
-					<img src="students.jpg">
-				</div>
-			</div>
-
-
-			<div>
-				<div>
-					<img src="students.jpg">
-				</div>
-
-				<div>
-					<h2>Learn Photoshop basics</h2>
-					<h4>Graphic Designing</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<button>Start Learning</button>
-				</div>
-			</div>
-
-			<div>
-				<div>
-					<h2>Learn Photoshop basics</h2>
-					<h4>Graphic Designing</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<button>Start Learning</button>
-				</div>
-
-				<div>
-					<img src="students.jpg">
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="footer">
-		<div class="background"></div>
-		<p>&copy; EduTech 2017</p>
 	</div>
 </div>
 
+
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+    <script  src="particle.js"></script>
+
+<div class="section2">
+	<h2>WHAT WE THINK OF OURSELVES</h2>
+	<h1>OUR DREAMS ARE BIG</h1>
+
+	<p>EduTech Foundation is an Indian MOOC (massive open online course) which aims at providing tools required to excel in the 21st century. Our purpose is lucid - <span>we believe that everyone has the right to access knowledge</span> regardless of their social strata, race, colour, religion etc. Given that about 70% of the Indian population resides in rural areas and have restrained access to vital educational resources, we have come up with an unique solution.</p>
+
+	<p>We conducted a survey, involving about 100 companies/ MNCs/ business houses asking them about the basic skills required to being job-ready in the 21st century. The survey data has been used to provide basic support to a defined target section. An introductory <span>set of 50 videos, with Hindi as the medium has been initially uploaded.</span></p>
+
+	<p>The resources available on the website range from basics in Microsoft Office to fundamentals in Computer Programming, Web Designing besides English Language, Photoshop etc. These videos are integrated with test series and projects which will help anyone monitor their progress. These videos are accessible to all free of cost. We also collaborated with various NGOs/volunteer-schools and member institutions conducting workshops and live sessions on awareness in skill development. EduTech currently has a user base of <span>2100 users</span> and was also featured in the leading National newspaper of India, Times of India.</p>
+
+	<p>The belief that <span>education and job opportunities</span> are the key to establish everyone on a common dias. We need to eradicate the sense of ignorance. This is possible through education bridging these differences in society.</p>
+</div>
+
+
+<div class="section3">
+	<h2>REDUCING THE GENDER GAP</h2>
+	<h1>SHE FOR STEM</h1>
+
+	<p>EduTech Foundation is an Indian MOOC (massive open online course) which aims at providing tools required to excel in the 21st century. Our purpose is lucid - <span>we believe that everyone has the right to access knowledge</span> regardless of their social strata, race, colour, religion etc. Given that about 70% of the Indian population resides in rural areas and have restrained access to vital educational resources, we have come up with an unique solution.</p>
+
+	<p>We conducted a survey, involving about 100 companies/ MNCs/ business houses asking them about the basic skills required to being job-ready in the 21st century. The survey data has been used to provide basic support to a defined target section. An introductory <span>set of 50 videos</span>, with Hindi as the medium has been initially uploaded.</p>
+
+	<p>The resources available on the website range from basics in Microsoft Office to fundamentals in Computer Programming, Web Designing besides English Language, Photoshop etc. These videos are integrated with test series and projects which will help anyone monitor their progress. These videos are accessible to all free of cost. We also collaborated with various NGOs/volunteer-schools and member institutions conducting workshops and live sessions on awareness in skill development. EduTech currently has a user base of <span>2100 users</span> and was also featured in the leading National newspaper of India, Times of India.</p>
+
+	<p>The belief that <span>education and job opportunities</span> are the key to establish everyone on a common dias. We need to eradicate the sense of ignorance. This is possible through education bridging these differences in society.</p>
+
+
+	<a href="stem/"><button>View Page</button></a>
+</div>
+
+<div class="section4">
+	<div class="mail"><a href="mailto:teamedutechacademy@gmail.com">teamedutechacademy<span>@gmail</span></a></div>
+	<div class="contact">
+		<a href="https://www.facebook.com/edutechacademy/"><div class="box" style="background:#3b5997"><img src="fbW.png"></div></a>
+		<div class="box" style="background:#0077b5"><img src="linkedinW.png"></div>
+		<a href="https://www.youtube.com/channel/UCDqZLGNVPJlDe9Lbu2nqcZg/videos"><div class="box" style="background:#c12025"><img src="tubeW.png"></div></a>
+	</div>
+
+	<p>&copy; All Rights Reserved 2017</p>
+</div>
 </body>
 </html>
+<head>

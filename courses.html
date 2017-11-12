@@ -1,107 +1,154 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Edutech | Courses</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<title>EduTech</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hritik Aggarwal">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="CSS/common.css">
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
 	<link rel="stylesheet" type="text/css" href="courses.css">
-	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="loader.js"></script>
+
+	<script type="text/javascript" src="sideBar.js"></script>
+</head>
 </head>
 <body>
 
-	<div class="backtop">
-		<div class="text">
-			<div class="t">Our Courses</div>
-			<div class="st">Take a look at the courses we provide</div>
-			<div class="but">Start With Basics</div>
+<div class="loader"></div>
+
+<div class="toggle">
+	<div class="bars"></div>
+</div>
+
+<div class="nav">
+	<a>
+		<div class="menu">
+			<p>MENU</p>
+		</div>
+	</a>
+	<a href="index.html">
+		<div>
+			<img src="Assets/home.png">
+			<p>HOME</p>
+		</div>
+	</a>
+	<a href="javascript: void(0)">
+		<div class="curr">
+			<img src="Assets/vid.png">
+			<p>VIDEO LIBRARY</p>
+		</div>
+	</a>
+	<a href="stem.html">
+		<div>
+			<img src="Assets/stem.png">
+			<p>She For STEM</p>
+		</div>
+	</a>
+	<a href="about.html">
+		<div>
+			<img src="Assets/about.png">
+			<p>ABOUT US</p>
+		</div>
+	</a>
+	<a href="recommend.html">
+		<div>
+			<img src="Assets/write.png">
+			<p>RECOMMEND US</p>
+		</div>
+	</a>
+	<a href="testimonial.html">
+		<div>
+			<img src="Assets/star.png">
+			<p>TESTIMONIALS</p>
+		</div>
+	</a>
+	<a href="contact.html">
+		<div>
+			<img src="Assets/contact.png">
+			<p>CONTACT US</p>
+		</div>
+	</a>
+</div>
+
+
+<div class="section1">
+	<h2>We Have A Huge Collection</h2>
+	<h1>Video Library</h1>
+</div>
+
+<div class="section2">
+	<div class="courses">
+		<div class="c">
+			<img src="covers/InternetBasics.png">
+			<div class="line"></div>
+			<h2>Internet for Beginners</h2>
+			<p>This course deals with the basic use of Internet for total beginners. The course first deals with searching with Google and creating a simple Gmail avvount.</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/photoshop.png">
+			<div class="line"></div>
+			<h2>Basics of Photoshop</h2>
+			<p>Ads have always been troublesome to the many internet users out there. This course helps people to remove the ads by adding a small extension to their Chrome browser.</p>
+			<a href="https://www.youtube.com/watch?v=Ojl1ynb7_IU"><button>Start Learning</button></a>
+		</div>
+
+
+		<div class="c">
+			<img src="covers/AdBlock.png">
+			<div class="line"></div>
+			<h2>Mailing With Gmail</h2>
+			<p>This course deals with the basic Microsoft Applications in Office and gives an in-depth knowledge about how to use these applications in order to make our day-to-day work easier and better managed.</p>
+			<a href="https://www.youtube.com/watch?v=pGlNBgRqV6Y"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/emailing.png">
+			<div class="line"></div>
+			<h2>Searching with Google</h2>
+			<p>Emailing is the most important feature of using Internet. This courses introduces gmail and teaches the way to send emails. The course also explains the terms BCC, CC and other common parts of a standard email.</p>
+			<a href="https://www.youtube.com/watch?v=BNQbmshpskM"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/BasicHTML.png">
+			<div class="line"></div>
+			<h2>Basics of HTML</h2>
+			<p>This course deals with the basic Microsoft Applications in Office and gives an in-depth knowledge about how to use these applications in order to make our day-to-day work easier and better managed.</p>
+			<a href="https://www.youtube.com/watch?v=6ZP1DKDLCDU"><button>Start Learning</button></a>
+		</div>
+
+
+		<div class="c">
+			<img src="covers/drive.png">
+			<div class="line"></div>
+			<h2>Using Google Drive</h2>
+			<p>The popular Google Drive is a place for storing everything. The course teaches viewers to use the google drive and make their data protected and accessible from anywhere. The course also teaches about Google Docs, Google Sreadsheets, and Google slides.</p>
+			<a href="#"><button>Start Learning</button></a>
 		</div>
 	</div>
-	<div class="top">
-		<img src="logo_white.png">
+</div>
+
+<div class="section4">
+	<div class="mail"><a href="mailto:teamedutechacademy@gmail.com">teamedutechacademy<span>@gmail</span></a></div>
+	<div class="contact">
+		<a href="https://www.facebook.com/edutechacademy/"><div class="box" style="background:#3b5997"><img src="fbW.png"></div></a>
+		<div class="box" style="background:#0077b5"><img src="linkedinW.png"></div>
+		<a href="https://www.youtube.com/channel/UCDqZLGNVPJlDe9Lbu2nqcZg/videos"><div class="box" style="background:#c12025"><img src="tubeW.png"></div></a>
 	</div>
 
-	<div class="mainsite">
-		<div class="coursecont">
-			<div class="box">
-				<div class="backim bim1"></div>
-				<div class="bdiv">
-					<b>Microsoft Office</b>
-					<p>
-						This course deals with the basic Microsoft Applications in Office and gives an in-depth knowledge about how to use these applications in order to make our day-to-day work easier and better managed.
-					</p>
-
-					<button>Start Course</button>
-				</div>
-			</div>
-			<div class="box">
-				<div class="backim bim2"></div>
-				<div class="bdiv">
-					<b>English Speaking</b>
-					<p>
-					In today's dynamic world,speaking English is a must. .This course explains the various components of spoken english, the way to make yourself sound glamorous.
-					</p>
-					<button>Start Course</button>
-
-				</div>
-			</div>
-			<div class="box">
-				<div class="backim bim3"></div>
-				<div class="bdiv">
-					<b>Computer Programming</b>
-					<p>
-					In today's dynamic world,speaking English is a must. .This course explains the various components of spoken english, the way to make yourself sound glamorous.
-					</p>
-					<button>Start Course</button>
-
-				</div>
-			</div>
-			<div class="box">
-				<div class="backim bim4"></div>
-				<div class="bdiv">
-					<b>How to use the internet?</b>
-					<p>
-					The review on the internet and derived technologies to develop an understanding of systematic databases, data transfer for an effective online presence. This portion contains videos demostrating the basic functions of internet such as social networking,email ,browsing the net etc.
-					</p>
-					<button>Start Course</button>
-				</div>
-			</div>
-			<div class="box">
-				<div class="backim bim5"></div>
-				<div class="bdiv">
-					<b>Google Drive</b>
-					<p>
-					This course deals with the newly introduced concept of cloud storage.It demostrates the applications and benifits of cloud storage.It introduces the most commonly used storage media-'The Google Drive' and helps you explore the various functions of Drive.
-					</p>
-					<button>Start Course</button>
-				</div>
-			</div>
-			<div class="box">
-				<div class="backim bim6"></div>
-				<div class="bdiv">
-					<b>Web Designing</b>
-					<p 	class="sm">
-					Ever wondered how are those beautifully crafted websites are made? Here's your road to learning the art of web-designing to create beautiful websites yourself. This course provides an in-sight into the various languages involved in the process of web designing such as-HTML,Java,CSS etc and how to bind them together in order to make a exhilarating website.
-					</p>
-					<button>Start Course</button>
-				</div>
-			</div>
-			<div class="box">
-				<div class="backim bim7"></div>
-				<div class="bdiv">
-					<b>Photoshop</b>
-					<p>
-					Learn how to play with images and create your own graphics. This course in Photoshop helps you understand the uses of various Photoshop elements. Once you know how these tools function, you can use them in infinite ways to create, edit and process graphics
-					</p>
-					<button>Start Course</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="footer">
-		<div class="background"></div>
-		<p>&copy; EduTech 2017</p>
-	</div>
+	<p>&copy; All Rights Reserved 2017</p>
+</div>
 </body>
 </html>
