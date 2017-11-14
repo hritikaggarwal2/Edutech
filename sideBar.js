@@ -34,7 +34,7 @@ $(document).ready(function(){
 			{
 				$(".nav").css({"left":"0px"});
 				$("body,html").css({left:"0em"});
-				$(".toggle").css({left: "auto", right: "45px"});
+				$(".toggle").css({top:"15px",left: "auto", right: "25px", transform:"scale(0.8)"});
 				$('.bars').addClass('cross');
 				x = 1;
 			}
@@ -42,7 +42,7 @@ $(document).ready(function(){
 			{
 
 				$(".nav").css({"left":"-100%"});
-				$(".toggle").css({"left":"25px"});
+				$(".toggle").css({top:"10px","left":"25px", transform:"scale(1)"});
 				$("body,html").css({left:"0em"});
 				$('.bars').removeClass('cross');
 				x = 0;

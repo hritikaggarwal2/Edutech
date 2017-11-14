@@ -87,7 +87,6 @@ a
 @media (max-width :350px){
     .loader
     {
-        background: url(loading.gif) 50% 50% no-repeat #fff;
         background-size: 220%;
     }
 
