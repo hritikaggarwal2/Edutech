@@ -1,0 +1,120 @@
+.section1
+{
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+    background: linear-gradient(to right, #57b8e2, #58b8e2);
+    background:url('../Background.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section1 img
+{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section1 h1::before
+{
+    content: " ";
+    width: 30%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 12px;
+    height: 3px;
+    background: #eee;
+    opacity: 0.2;
+}
+
+
+.section1 h2
+{
+    color: #197da8;
+    font-weight: 300;
+    font-size: 1.3em;   
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.section1 h1
+{
+    margin-left: 10%;
+    position: relative;
+    color: #fff;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: PT Sans;
+}
+
+@media (max-width :580px){
+
+    .section1
+    {
+        background-size: 280%;
+    }
+
+}
+
+@media (max-width :350px){
+
+    .section1
+    {
+        background-size: cover;
+    }
+
+    .section1 img
+    {
+        width: 200px;
+    }
+
+    .section1 h2::before
+    {
+        width: 30%;
+        height: 2px;
+        display: none
+    }
+
+    .section1 h2
+    {
+        font-size: 1.1em;   
+        padding-top: 10px;
+    }
+
+}
+
+@media(max-width: 240px)
+{
+     .section1 img
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    .section1 h2::before
+    {
+        width: 30%;
+        height: 2px;
+        display: none
+    }
+
+    .section1 h2
+    {
+        font-size: 1em;   
+        padding-top: 10px;
+    }
+
+    .section1 h1
+    {
+        font-size: 2em;   
+        
+    }
+}
