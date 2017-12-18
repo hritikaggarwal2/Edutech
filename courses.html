@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EduTech</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hritik Aggarwal">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="CSS/common.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Upper.css">
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+	<link rel="stylesheet" type="text/css" href="courses.css">
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="loader.js"></script>
+</head>
+<body>
+
+<div class="loader"></div>
+
+<div class="navy">
+	<div class="toggle">
+		<div class="bars"></div>
+	</div>
+</div>
+
+<div class="con">
+	
+
+	<div class="side"></div>
+
+	<div class="black">
+		<div class="bottom"> 
+			<div class="menu">
+				<a href="index.html"><div class="btext animated b1">HOME</div></a>
+				<div class="btext animated b2 curr">VIDEO LIBRARY</div>
+				<a href="stem/"><div class="btext animated b3">SHE FOR STEM</div></a>
+				<a href="about.html"><div class="btext animated b4">ABOUT US</div></a>
+				<a href="recommend.html"><div class="btext animated b5">RECOMMEND US</div></a>
+				<a href="testimonial.html"><div class="btext animated b6">TESTIMONIALS</div></a>
+				<a href="contact.html"><div class="btext animated b7">CONTACT US</div></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	x = $(".side");
+	y = $(".black");
+	z = $(".btext");
+	a = 1;
+	$(".navy").click(function () {
+		if(a==1){
+			$(".con").css({"z-index":"9000000"});
+			x.css({"width":"100%", "height":"100%"})
+			setTimeout(function() {
+				x.css({"transform":"scale(1.4)"})
+			}, 500);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(11)"})
+			}, 1000);
+
+			setTimeout(function() {
+				y.css({"width":"200%", "height":"200%",visibility:"visible"})
+			}, 1300);
+
+			setTimeout(function() {
+				z.removeClass("fadeOutDown")
+				z.addClass("fadeInUp")
+			}, 1900);
+			a=0;
+		}else{
+			z.removeClass("fadeInUp")
+			z.addClass("fadeOutDown")
+
+			setTimeout(function() {
+				y.css({"width":"0%", "height":"0%",visibility:"0"})
+
+			}, 1400);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(11)"})
+			}, 1800);
+
+			setTimeout(function() {
+				x.css({"width":"0%", "height":"0%"})
+				$(".con").css({"z-index":"0"});
+			}, 2800);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(1.7)"})
+			}, 3000);
+			a=1;
+		}
+	})
+</script>
+
+
+<div class="section1">
+	<img src="logo_white.png">
+	<h1>Video Library</h1>
+</div>
+
+<div class="section2">
+	<div class="courses">
+		<div class="c">
+			<img src="covers/InternetBasics.png">
+			<h2>Using Internet</h2>
+			<p>This course deals with the basic usage of Internet for total beginners. The course starts with introduction of a web browser, followed by searching on the Internet using the Google Search Engine. Next the course discusses a step-by-step procedure to create a new Gmail account, along with the basics of emailing.<p>
+			<a href="play.html?vidID=cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/eng.png">
+			<h2>English</h2>
+			<p>Understand and master the usage of English grammar rules. This course helps the viewers understand the simple yet important concepts in the English language. Starting with nouns, the course extends all the way to punctuations and tenses. It’s the perfect course for any non-native beginner.</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/social.png">
+			<h2>Social Networking</h2>
+			<p>Social Networking has become an important part of today’s world, but not many tutorials are available for people to grasp all the basic knowledge required by any first-timer. This course is just the right place. The course deals with starting up with Facebook, and working in its environment. New Courses coming shortly.</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/entre.png">
+			<h2>Entrepreneurship</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/gsuite.png">
+			<h2>G Suite</h2>
+			<p>The G Suite is a brand of cloud computing, productivity and collaboration tools, software and products developed by Google which includes Google Docs, Google Slides, Google Drive, etc. This course gives a complete basic walkthrough around a few of these products while going deep into the major features.</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/microsoft.png">
+			<h2>MS Office</h2>
+			<p>Microsoft Office is an office suite of applications, servers, and services developed by Microsoft. The products include MS Word, MS PowerPoint, MS Access, and many more essential softwares. This course gives a complete basic walkthrough around a few of these products while going deep into the major features.</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/coding.png">
+			<h2>Web Development</h2>
+			<p>Web Development refers to the development of a web site for either the internet or intranet. This course will teach the viewers about HTML, CSS, and JavaScript, which are the fundamental languages for such a development. The course includes video tutorials for beginner, intermediate, and expert. </p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/cpp.png">
+			<h2>C++ Programming</h2>
+			<p>C++ is an imperative, object-oriented and generic programming language, which is an extension of the language C. This language is one of the most popular programming languages, and forms the backbone of several other languages. This course gives detailed tutorials on the major commands of the language.</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/photoshop.png">
+			<h2>Photoshop</h2>
+			<p>Adobe Photoshop is a raster graphics editor developed and published by Adobe Systems for mac OS and Windows. This course helps getting started with using Adobe Photoshop with some basic tutorials, and then extends its reach to some major advanced concepts.</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/doodling.png">
+			<h2>Doodling</h2>
+			<p>Doodles are simple drawings that can have concrete representational meaning or may just be composed of random and abstract lines. This course teaches the basic concepts of doodling, and how a person can master such a technique.</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+		<div class="c">
+			<img src="covers/ext.png">
+			<h2>Extensions</h2>
+			<p>TThere are many browsers available today, but the most preferred amongst them is Google Chrome. This course helps the user get the most out of Google Chrome by understanding and using different types of extensions.</p>
+			<a href="https://youtu.be/cQfIGvfeqYw"><button>Start Learning</button></a>
+		</div>
+
+
+	</div>
+</div>
+
+<div class="section4">
+	<div class="mail"><a href="mailto:teamedutechacademy@gmail.com">teamedutechacademy<span>@gmail</span></a></div>
+	<div class="contact">
+		<a href="https://www.facebook.com/edutechacademy/"><div class="box" style="background:#3b5997"><img src="fbW.png"></div></a>
+		
+		<a href="https://www.linkedin.com/company/edutechacademy/"><div class="box" style="background:#0077b5"><img src="linkedinW.png"></div></a>
+
+		<a href="tel:+919958188118"><div class="box" style="background:#1bb4ab"><img src="call.png"></div></a>
+	</div>
+
+	<p>&copy; All Rights Reserved 2017</p>
+</div>
+</body>
+</html>

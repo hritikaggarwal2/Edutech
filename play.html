@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EduTech</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hritik Aggarwal">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="CSS/common.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Upper.css">
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+	<link rel="stylesheet" type="text/css" href="play.css">
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="loader.js"></script>
+</head>
+<body>
+
+<div class="loader"></div>
+
+<div class="navy">
+	<div class="toggle">
+		<div class="bars"></div>
+	</div>
+</div>
+
+<div class="con">
+	
+
+	<div class="side"></div>
+
+	<div class="black">
+		<div class="bottom"> 
+			<div class="menu">
+				<a href="index.html"><div class="btext animated b1">HOME</div></a>
+				<a href="courses.html"><div class="btext animated b2">VIDEO LIBRARY</div></a>
+				<a href="stem/"><div class="btext animated b3">SHE FOR STEM</div></a>
+				<a href="about.html"><div class="btext animated b4">ABOUT US</div></a>
+				<a href="recommend.html"><div class="btext animated b5">RECOMMEND US</div></a>
+				<a href="testimonial.html"><div class="btext animated b6">TESTIMONIALS</div></a>
+				<a href="contact.html"><div class="btext animated b7">CONTACT US</div></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	x = $(".side");
+	y = $(".black");
+	z = $(".btext");
+	a = 1;
+	$(".navy").click(function () {
+		if(a==1){
+			$(".con").css({"z-index":"9000000"});
+			x.css({"width":"100%", "height":"100%"})
+			setTimeout(function() {
+				x.css({"transform":"scale(1.4)"})
+			}, 500);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(11)"})
+			}, 1000);
+
+			setTimeout(function() {
+				y.css({"width":"200%", "height":"200%",visibility:"visible"})
+			}, 1300);
+
+			setTimeout(function() {
+				z.removeClass("fadeOutDown")
+				z.addClass("fadeInUp")
+			}, 1900);
+			a=0;
+		}else{
+			z.removeClass("fadeInUp")
+			z.addClass("fadeOutDown")
+
+			setTimeout(function() {
+				y.css({"width":"0%", "height":"0%",visibility:"0"})
+
+			}, 1400);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(11)"})
+			}, 1800);
+
+			setTimeout(function() {
+				x.css({"width":"0%", "height":"0%"})
+				$(".con").css({"z-index":"0"});
+			}, 2800);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(1.7)"})
+			}, 3000);
+			a=1;
+		}
+	})
+</script>
+
+
+<div class="section1">
+	<img src="logo_white.png">
+	<h1>Start Learning</h1>
+</div>
+
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&modestbranding=1&showinfo=0"
+  frameborder="0" allowfullscreen></iframe>
+
+  <iframe src="https://www.youtube.com/embed/AD86CwFYd1c?modestbranding=1&showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+<script type="text/javascript" src="play.js"></script>
+</body>
+</html>

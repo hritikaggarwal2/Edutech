@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EduTech | Testimonial</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Hritik Aggarwal">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="CSS/common.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Upper.css">
+	<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+	<link rel="stylesheet" type="text/css" href="testimonial.css">
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="loader.js"></script>
+</head>
+<body>
+
+<div class="loader"></div>
+
+<div class="navy">
+	<div class="toggle">
+		<div class="bars"></div>
+	</div>
+</div>
+
+<div class="con">
+	
+
+	<div class="side"></div>
+
+	<div class="black">
+		<div class="bottom"> 
+			<div class="menu">
+				<a href="index.html"><div class="btext animated b1">HOME</div></a>
+				<a href="courses.html"><div class="btext animated b2">VIDEO LIBRARY</div></a>
+				<a href="stem/"><div class="btext animated b3">SHE FOR STEM</div></a>
+				<a href="about.html"><div class="btext animated b4">ABOUT US</div></a>
+				<a href="recommend.html"><div class="btext animated b5">RECOMMEND US</div></a>
+				<div class="btext animated b6 curr">TESTIMONIALS</div>
+				<a href="contact.html"><div class="btext animated b7">CONTACT US</div></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	x = $(".side");
+	y = $(".black");
+	z = $(".btext");
+	a = 1;
+	$(".navy").click(function () {
+		if(a==1){
+			$(".con").css({"z-index":"9000000"});
+			x.css({"width":"100%", "height":"100%"})
+			setTimeout(function() {
+				x.css({"transform":"scale(1.4)"})
+			}, 500);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(11)"})
+			}, 1000);
+
+			setTimeout(function() {
+				y.css({"width":"200%", "height":"200%",visibility:"visible"})
+			}, 1300);
+
+			setTimeout(function() {
+				z.removeClass("fadeOutDown")
+				z.addClass("fadeInUp")
+			}, 1900);
+			a=0;
+		}else{
+			z.removeClass("fadeInUp")
+			z.addClass("fadeOutDown")
+
+			setTimeout(function() {
+				y.css({"width":"0%", "height":"0%",visibility:"0"})
+
+			}, 1400);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(11)"})
+			}, 1800);
+
+			setTimeout(function() {
+				x.css({"width":"0%", "height":"0%"})
+				$(".con").css({"z-index":"0"});
+			}, 2800);
+
+			setTimeout(function() {
+				x.css({"transform":"scale(1.7)"})
+			}, 3000);
+			a=1;
+		}
+	})
+</script>
+
+
+<div class="section1">
+	<img src="logo_white.png">
+	<h1>Testimonials</h1>
+</div>
+
+<div class="section2">
+	<div class="courses">
+		<div class="c">
+			<h2>Saif Khan</h2>
+			<h4>Six Sigma/Lean Project, Operations Improvement Customer Experience at Hewlett Packard (M5)</h4>
+			<p>Without hesitation, I recommend Divyansh Sharma unequivocally. He is a young person who cares deeply about the social implications of Technology and who has demonstrated this conviction through this and several substantial initiatives. I have never before written a recommendation for a student where the candidate and the opportunity were such a perfect fit. Divyansh has firm spiritual roots and an active, diverse, social life; he is loyal, committed, and clear-sighted.</p>
+		</div>
+
+		<div class="c">
+			<h2>Vivek Swarnkar</h2>
+			<h4>Technical SME at NCR Corporation India</h4>
+			<p>EduTech foundation is doing some brilliant work for downtrodden members of the society. This startup is a very innovative approach to tackle problems like lack of knowledge in today's world. It is great to see such a young startup expanding so rapidly in the social sectors. I hope that more and more people use EduTech and learn entry level skills for sustaining themselves in the 21st century. Best of luck!</p>
+			<!-- <h6><a href="https://www.linkedin.com/in/vivek-swarnkar-84754127/">LinkedIn Profile</a></h7> -->
+		</div>
+
+		<div class="c">
+			<h2>Amritanshu Pandey</h2>
+			<h4>Software Specialist at Eastern Software Systems</h4>
+			<p>A noble work for the mankind.It is fascinating to see young teenagers having such high level of intellectual capital and a desire to improve the society.I hope that EduTech team are able to fulfill their goal of 1 million users.Go ahead guys with the same spirit and make this world a better place to live.</p>
+		</div>
+
+		<div class="c">
+			<h2>Manbir Cheema</h2>
+			<h4>Software Engineer at NCR Corporation</h4>
+			<p>Divyansh has taken a great initiative and I have personally seen him work very hard for this project.The entire EduTech team is very committed toward their goal of reaching 1 million users and i wish them all the success in the near future.</p>
+		</div>
+
+		<div class="c">
+			<h2>Archana Muku</h2>
+			<h4>Business Analyst at NCR Corporation</h4>
+			<p>Edutech is really a very noble initiative started by a bunch of school students.It can help people financially as well as intellectualy.I have personally seen the development of this startup from scratch.I wish EduTech team all the best for their future endeavours.</p>
+		</div>
+
+		<div class="c">
+			<h2>Shipra Aggarwal</h2>
+			<h4>Manager Sales- Cloud Services (North) at SaaSFocus Inc</h4>
+			<p>EduTech is a very noble effort towards education sector.I have personally seen them work and have seen his efforts bear fruits at the grassroots level. I wish them all the success in the near future!</p>
+		</div>
+
+	
+
+	</div>
+</div>
+
+<div class="section4">
+	<div class="mail"><a href="mailto:teamedutechacademy@gmail.com">teamedutechacademy<span>@gmail</span></a></div>
+	<div class="contact">
+		<a href="https://www.facebook.com/edutechacademy/"><div class="box" style="background:#3b5997"><img src="fbW.png"></div></a>
+		
+		<a href="https://www.linkedin.com/company/edutechacademy/"><div class="box" style="background:#0077b5"><img src="linkedinW.png"></div></a>
+
+		<a href="tel:+919958188118"><div class="box" style="background:#1bb4ab"><img src="call.png"></div></a>
+	</div>
+
+	<p>&copy; All Rights Reserved 2017</p>
+</div>
+</body>
+</html>

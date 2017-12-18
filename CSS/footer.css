@@ -1,0 +1,106 @@
+.section4
+{
+	width: 100%;
+	height: auto;
+	background: #1d262a;
+	padding: 40px 0 5px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section4 .mail
+{
+	width: fit-content;
+	padding: 0 20px;	
+	height: auto;
+	background: #333a3d;
+	text-align: center;
+	margin:auto;
+}
+
+.section4 .mail a
+{
+	color: #fff;
+	font-family: PT Sans;
+	font-size: 25px;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+.section4 .contact
+{
+	width: auto;
+	margin-top: 20px;
+	height: 45px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.section4 .contact .box
+{
+	width: 45px;
+	height: 45px;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+.section4 .contact .box img
+{
+	width: 35px;
+	margin:5px;
+}
+
+
+.section4 p
+{
+	text-align: center;
+	font-weight: 300;
+	font-size: .8em;
+	color: #eee;
+	margin-top: 40px;
+}
+
+/* ADJUSTING DIFFERENT SCREENS ------------------------------------- */
+@media (max-width :450px){
+
+	.section4 .mail a
+	{
+		font-size: 18px;
+	}
+
+}
+
+
+@media (max-width :300px){
+	.section4 .mail a
+	{
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+
+	.section4 span
+	{
+		display: none;
+	}
+
+}
+
+
+@media (max-width :230px){
+
+	.section4 .contact .box
+	{
+		width: 35px;
+		height: 35px;
+	}
+
+	.section4 .contact .box img
+	{
+		width: 25px;
+		margin:5px;
+	}
+
+}

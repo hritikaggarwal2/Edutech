@@ -1,0 +1,255 @@
+
+
+.section2
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    background: #f5f5f5;
+    background: linear-gradient(141deg, #f5f5f5 0%, #eee 51%, #d3daec 75%);
+    background-size: cover;
+}
+
+.section2 .contact
+{
+    width: auto;
+    margin-top: 20px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.section2 .contact .box
+{
+    width: 45px;
+    height: 45px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.section2 .contact .box img
+{
+    width: 35px;
+    margin:5px;
+}
+
+.section2 .courses
+{
+    margin: 7% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section2 .courses .bigB
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;   
+    width: 100%;
+}
+
+
+.section2 .courses .c
+{
+    width: 24%;
+    padding: 25px;
+    font-family: PT Sans;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.section2 .courses .bigger
+{
+    width: 30%;
+}
+
+
+.section2 .courses .c .line
+{
+    width: 15%;
+    height: 2px;
+    background: #666;
+    margin: 20px 0 10px 0;
+
+}
+
+.section2 .courses .c > img:first-child
+{
+    width:230px;
+    border-radius: 100%;
+    align-self: center;
+    margin: 0;
+    margin: auto;
+}
+
+.section2 .courses .c h2
+{
+    color: #222;
+}
+
+.section2 .courses .c h6
+{
+    color: #888;
+    font-weight: 300;
+    font-size: .8em;
+}
+
+.section2 .courses .c p
+{
+    margin: 10px 0;
+    font-family: Lato;
+    font-weight: 500;
+    color: #333;
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+
+@media (max-width :1100px){
+
+    .section2 .courses .c > img:first-child
+    {
+        width: 30%;
+        border-radius: 100%;
+        margin: 0;
+    }
+
+    .section2 .courses .c
+    {
+        width: 80%;
+        padding: 25px;
+        font-family: PT Sans;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section2 .courses .c .splitter
+    {
+        margin-left: 7%;
+        width: 60%;
+        height: auto;
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width :700px){
+
+    .section2 .courses .c
+    {
+        width: 90%;
+    }
+
+    .section2 .courses .bigger
+    {
+        width: 90%;
+    }
+
+}
+
+@media (max-width :580px){
+
+
+    .section2 .courses .bigger
+    {
+        width: 85%;
+        padding: 25px;
+        margin: 0px;
+    }
+
+    .section2 .courses .c > img:first-child
+    {
+        width: 50%;
+        border-radius: 100%;
+        margin: 0 25%;
+    }
+
+    .section2 .courses .c
+    {
+        border-bottom : 1px solid #ddd;
+        margin-bottom: 10px;
+        width: 85%;
+        padding: 25px;
+        margin: 0px;
+    }
+
+    .section2 .courses .c .splitter
+    {
+        margin-left: 0%;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+}
+
+
+@media (max-width :350px){
+
+    .section2 .courses .c p
+    {
+        margin: 10px 0;
+        font-family: Lato;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 1.3em;
+    }
+
+    .section2 .courses .c .line
+    {
+        opacity: 0;
+    }
+
+    .section2 .courses .c h2
+    {
+        text-align: center;
+    }
+
+    .section2 .courses .c h6
+    {
+        text-align: center;
+        font-weight: 300;
+        font-size: .8em;
+    }
+
+}
+
+@media (max-width :300px){
+
+    .section2 .courses .c p
+    {
+        display: none;
+    }
+
+    .section2 .courses .c h2
+    {
+        text-align: center;
+    }
+
+    .section2 .courses .c h6
+    {
+        text-align: center;
+        font-weight: 300;
+        font-size: .8em;
+    }
+
+    .section2 .courses .c > img:first-child
+    {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+}

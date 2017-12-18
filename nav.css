@@ -1,0 +1,210 @@
+.con{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	position: fixed;
+	z-index: -1;
+}
+
+.con a
+{
+	color: #fff;
+}
+
+.con .side{
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	background: #fff;
+	top: 0;
+	right: 0;
+	clip-path: polygon(0% 80%, 0% 100%, 10% 100%,100% 20%, 100% 0%, 90% 0%);
+	transform: scale(1.7);
+	z-index: 3;
+	transition: all 0.5s ease;
+}
+
+.con .black{
+	position: absolute;
+	background: #56b7e1;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	z-index: 4;
+	clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+	transition: all 0.3s ease; 
+	color: #fff;
+	display: flex;
+	visibility: 0;
+}
+
+.con .bottom{
+	position: absolute;
+	height: 50%;
+	bottom: 0;
+	width: 50%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.con .btext{
+	line-height:50px;
+	font-size: 20px; 
+	opacity: 0;
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	transition: .5s ease;
+}
+
+.con .btext:hover
+{
+	top: -10px;
+}
+
+.con .menu{
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.con .b1{
+	animation-delay: 0.7s;
+	animation-duration: 0.5s;
+}
+
+.con .b2{
+	animation-delay: 0.8s;
+	animation-duration: 0.5s;
+}
+.con .b3{
+	animation-delay: 0.9s;
+	animation-duration: 0.5s;
+}
+.con .b4{
+	animation-delay: 1s;
+	animation-duration: 0.5s;
+}
+.con .b5{
+	animation-delay: 1.1s;
+	animation-duration: 0.5s;
+}
+.con .b6{
+	animation-delay: 1.2s;
+	animation-duration: 0.5s;
+}
+.con .b7{
+	animation-delay: 1.3s;
+	animation-duration: 0.5s;
+}
+
+.navy{
+	z-index:5;
+	font-family: open sans;
+	font-size: 1.2em;
+	cursor: pointer;
+	position: fixed;
+	left: 30px;
+	z-index: 99000000;
+	top: 30px;
+}
+
+.navy .toggle
+{
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	right: 0;
+	top: 10px;
+	z-index: 9000000;
+	transform: scale(1);
+	background: transparent;
+}
+
+.navy .bars
+{
+	width: 35px;
+	height: 3px;
+	z-index: 9000000;
+	border-radius: 10px;
+	background: #222;
+}
+
+.navy .bars::before
+{
+	content: "";
+	width: 30px;
+	height: 3px;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	background: #222;
+	border-radius: 10px;
+}
+
+.navy .bars::after
+{
+	content: "";
+	width: 34px;
+	height: 3px;
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	background: #222;
+	border-radius: 10px;
+}
+
+.con .curr
+{
+	color: #256e8e;
+	cursor: default;
+}
+
+.con .curr:hover
+{
+	top: 0;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  animation-name: fadeOutDown;
+}

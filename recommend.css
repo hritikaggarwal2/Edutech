@@ -1,0 +1,98 @@
+form
+{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 7% auto;
+}
+
+form input
+{
+    background: none;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #ccc;
+    margin: 10px;
+    width: 40%;
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+form input:focus
+{
+    border-bottom: 2px solid #3aa6d5;
+}
+
+form textarea
+{
+    resize: none;
+    outline: none;
+    border: 2px solid #ccc; 
+    background: transparent;
+    width: 85%;
+    margin: 15px 0;
+    padding: 10px;
+    font-family: Lato;
+    height: 10em;
+}
+
+form textarea:focus
+{
+    border: 2px solid #3aa6d5;
+}
+
+form button
+{
+    background: none;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    width: 55%;
+    height: 45px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: PT Sans;
+    font-size: .9em;
+    color: #3aa6d5;
+    border:1px solid #3aa6d5;
+    cursor: pointer;
+}
+
+form button:hover
+{
+    background: #3aa6d5;
+    color: #fff;
+}
+
+@media (max-width :900px){
+    form
+    {
+        width: 80%;
+    }
+}
+
+@media (max-width :540px){
+    form input
+    {
+        width: 90%;
+    }
+
+    form
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width :400px){
+    form button
+    {
+        margin: 10px auto 20px auto;
+        width: 90%;
+    }
+}
