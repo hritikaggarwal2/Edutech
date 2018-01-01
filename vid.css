@@ -1,0 +1,40 @@
+.vids{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+.video{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0;
+}
+
+.other{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 50px;
+	flex-wrap: wrap;
+}
+
+.head{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.long{
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+
+.desc{
+	width: 60%;
+	padding-bottom: 30px;
+}
