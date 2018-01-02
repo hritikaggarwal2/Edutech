@@ -13,13 +13,18 @@
 	justify-content: center;
 	padding: 30px 0;
 	flex-direction: column-reverse;
+
+}
+
+.convid{
+	width: 80vw;
+	height: 40vw;
 }
 
 .other{
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	padding-bottom: 50px;
 	flex-wrap: wrap;
 }
 
@@ -38,8 +43,53 @@
 .desc{
 	width: 60%;
 	padding-bottom: 30px;
+	padding-top: 30px;
 }
 
 iframe{
 	margin-bottom: 20px;
+	height: 100%;
+	width: 100%;
+
+}
+
+.other div{
+	position: relative;
+	height:170px;
+	width: 300px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	overflow: hidden;
+
+}
+
+.block{
+	z-index: 10000;
+	width: 100%;
+	position: absolute;
+	top: -210px;
+}
+
+.block0{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.block1{
+	background: transparent;
+}
+
+.block2{
+	background: transparent;
+}
+
+.block3{
+	background: transparent;
+}
+
+.block4{
+	background: transparent;
+}
+
+.block5{
+	background: transparent;
 }
