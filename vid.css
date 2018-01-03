@@ -29,7 +29,7 @@ a{
 .other{
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -64,6 +64,8 @@ iframe{
 	width: 300px;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
 	overflow: hidden;
 
 }
@@ -73,6 +75,8 @@ iframe{
 	width: 100%;
 	position: absolute;
 	top: -210px;
+	left: -20px;
+	
 }
 
 .block0{
