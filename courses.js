@@ -25,6 +25,12 @@ $(".entre").click(function () {
 	window.open(ret, "_self")	
 })
 
+$(".sui").click(function () {
+	comm = "4";
+	localStorage.setItem("storageName", comm);
+	window.open(ret, "_self")	
+})
+
 $(".office").click(function () {
 	comm = "5";
 	localStorage.setItem("storageName", comm);
