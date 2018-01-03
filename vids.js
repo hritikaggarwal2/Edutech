@@ -83,7 +83,7 @@ $(document).ready(function () {
 		})
 
 	}else{
-		$(".video").css({"width":"100%"})		
+		$(".video").css({"width":"100%", "flex-direction":"column"})		
 		$(".video").append('<div class="entre"><div>Why Entrepreneurship?</div><div class="star"><a href="">Start Now</a></div></div>')
 		$(".video").append('<div class="entre"><div>Understanding Entrepreneurship</div><div class="star"><a href="">Start Now</a></div></div>')
 		$(".video").append('<div class="entre"><div>Introduction to Customer Discovery</div><div class="star"><a href="">Start Now</a></div></div>')
