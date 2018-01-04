@@ -111,8 +111,9 @@ iframe{
 	display: flex;
 	justify-content: space-between;
 	font-size: 20px;
-	margin-bottom: 30px;
-	margin-top: 30px;
+	padding: 30px;
+	background: transparent;
+	transition: .3s ease;
 }
 
 .entre div{
@@ -120,8 +121,24 @@ iframe{
 }
 
 .star{
-	border: 2px solid #58B8E2;
+	border: 2px solid #222;
 	border-radius: 50px;
+	color: #222;
 	width: 120px;
+	height: 25px;
+	font-size: .8em;
+	line-height: 25px;
+	transition: .3s ease;
 	text-align: center;
+	cursor: pointer;
+}
+
+.entre:hover
+{
+	background: #ddd;
+}
+
+.star:hover
+{
+	border: 2px solid #58B8E2;
 }
