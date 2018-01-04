@@ -41,8 +41,10 @@ a{
 }
 
 .long{
-	font-size: 1.2em;
+	font-size: 1em;
 	margin-top: 20px;
+	text-align: justify;
+	color: #222;
 }
 
 .desc{
@@ -55,7 +57,7 @@ iframe{
 	margin-bottom: 20px;
 	height: 100%;
 	width: 100%;
-
+	cursor: pointer;
 }
 
 .other div{
@@ -67,6 +69,7 @@ iframe{
 	margin-right: 20px;
 	margin-left: 20px;
 	overflow: hidden;
+	cursor: pointer;
 
 }
 
@@ -80,7 +83,7 @@ iframe{
 }
 
 .block0{
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .block1{
